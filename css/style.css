@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Pen Script", cursive;
+  background-color: rgb(250, 246, 243);
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.container .menu {
+  height: 100px;
+}
+
+.container .home {
+  max-height: 70px;
+  color: rgb(250, 246, 243);
+  border-bottom: 1px solid rgb(250, 246, 243);
+  background-color: rgb(211, 162, 129);
+  margin-bottom: 20px;
+}
+
+.container .home .material-icons {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.container .content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .data input {
+  border: 1px solid tan;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container .data input:focus {
+  outline: 1px solid tan;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(211, 162, 129);
+}
+
+ul {
+  font-size: 30px;
+  color: rgb(211, 162, 129);
+}
+
+button {
+  margin-left: 10px;
+  color: #000;
+  border: 3px solid #fff;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(19, 0, 0, 0.1);
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+button:focus {
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
+.footer {
+  position: fixed;
+  max-height: 100px;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer .footer-in {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(211, 162, 129);
+}
+.footer .footer-in address {
+  font-style: normal;
+}
+.footer .footer-in p {
+  margin: 0;
+}
+
+.footer .footer-in .copy {
+  margin: 0;
+}

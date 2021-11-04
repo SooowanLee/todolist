@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(250, 246, 243);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.login {
+  font-size: 20px;
+  width: 500px;
+  position: absolute;
+  height: 200px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.login h1 {
+  margin-bottom: 20px;
+  color: rgb(211, 162, 129);
+}
+
+.login .userid {
+  margin-bottom: 10px;
+}
+
+.login .userid #id {
+  width: 430px;
+  border: 1px solid tan;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.login .userid #id:focus {
+  outline: 2px solid tan;
+}
+
+.login .userpassword {
+}
+
+.login .userpassword #password {
+  width: 430px;
+  border: 1px solid tan;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.login .userpassword #password:focus {
+  outline: 2px solid tan;
+}
+
+.button {
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.button #btnLogin {
+  width: 450px;
+  border: 1px solid tan;
+  background-color: wheat;
+  color: rgb(211, 162, 129);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button #btnLogin:active {
+  background-color: rgb(250, 246, 243);
+}
+
+.footer {
+  position: fixed;
+  max-height: 100px;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.footer .footer-in {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(211, 162, 129);
+}
+.footer .footer-in address {
+  font-style: normal;
+}
+.footer .footer-in p {
+  margin: 0;
+}
+
+.footer .footer-in .copy {
+  margin: 0;
+}
