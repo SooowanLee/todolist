@@ -6,18 +6,45 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.header .menu {
+  vertical-align: baseline;
+  height: 100px;
+}
+
+.header .menu .home {
+  z-index: 9;
+  position: relative;
+  height: 100px;
+  color: rgb(250, 246, 243);
+  background-color: rgb(211, 162, 129);
+  margin-bottom: 20px;
+}
+
+.header .menu .home .material-icons {
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 20px;
+  width: fit-content;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
 .container {
   position: relative;
+  margin: 0 auto;
+  width: 1080px;
   height: 100vh;
-  overflow: scroll;
 }
 
 .login {
   font-size: 20px;
-  width: 500px;
   position: absolute;
   height: 200px;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -61,13 +88,15 @@ body {
 }
 
 .button {
+  display: flex;
+  justify-content: space-between;
   font-size: 20px;
   border-radius: 5px;
   margin-top: 10px;
 }
 
 .button #btnLogin {
-  width: 450px;
+  width: 220px;
   border: 1px solid tan;
   background-color: wheat;
   color: rgb(211, 162, 129);
@@ -75,20 +104,34 @@ body {
   padding: 10px;
 }
 
+.button #btnmembership {
+  width: 220px;
+  border: 1px solid tan;
+  background-color: wheat;
+  color: rgb(211, 162, 129);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button #btnmembership:active {
+  background-color: rgb(250, 246, 243);
+}
+
 .button #btnLogin:active {
   background-color: rgb(250, 246, 243);
 }
 
 .footer {
-  position: fixed;
-  max-height: 100px;
-  bottom: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  height: 300px;
   text-align: center;
 }
 
 .footer .footer-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 15px;
   line-height: 25px;
   color: rgb(211, 162, 129);

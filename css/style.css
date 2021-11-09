@@ -6,27 +6,35 @@ body {
 }
 
 .container {
-  position: relative;
+  width: 1080px;
+  margin: 0 auto;
   height: 100vh;
 }
 
-.container .menu {
+.header .menu {
+  z-index: 9;
+  vertical-align: baseline;
   height: 100px;
 }
 
-.container .home {
-  max-height: 70px;
+.header .menu .home {
+  position: relative;
+  height: 100px;
   color: rgb(250, 246, 243);
-  border-bottom: 1px solid rgb(250, 246, 243);
   background-color: rgb(211, 162, 129);
   margin-bottom: 20px;
 }
 
-.container .home .material-icons {
-  display: flex;
+.header .menu .home .material-icons {
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 20px;
   width: fit-content;
   align-items: center;
-  font-size: 40px;
+  font-size: 50px;
   cursor: pointer;
 }
 
@@ -35,6 +43,7 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 200px;
 }
 .container .data input {
   border: 1px solid tan;
@@ -74,15 +83,16 @@ button:focus {
 }
 
 .footer {
-  position: fixed;
-  max-height: 100px;
-  bottom: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  height: 300px;
   text-align: center;
 }
 
 .footer .footer-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 20px;
   line-height: 25px;
   color: rgb(211, 162, 129);
